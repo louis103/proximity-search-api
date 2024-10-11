@@ -38,6 +38,10 @@ pool.connect((err, client, release) => {
     }
   });
 
+app.get("/", (req, res) => {
+    res.send("Welcome to the Proximity Search API!");
+});
+
 // Proximity query route
 app.post('/api/proximity-query', async (req, res) => {
   const { latitude, longitude, radius } = req.body;
