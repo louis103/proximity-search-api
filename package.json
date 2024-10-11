@@ -1,0 +1,25 @@
+{
+  "name": "proximity-api",
+  "version": "1.0.0",
+  "description": "A simple REST Application Programming Interface (API) to allow for proximity analysis given a certain location and radius.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "API",
+    "Spatial",
+    "REST",
+    "framework",
+    "Proximity",
+    "Location"
+  ],
+  "author": "Louis Wambua @louis103",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.0"
+  }
+}
