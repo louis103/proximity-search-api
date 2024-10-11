@@ -23,6 +23,9 @@ const pool = new Pool({
   database: process.env.PGDATABASE,
   password: process.env.PGPASSWORD,
   port: process.env.PGPORT,
+  ssl: {
+    rejectUnauthorized: false, // This allows connecting without verifying the server certificate
+  },
 });
 
 // Database Connection check
