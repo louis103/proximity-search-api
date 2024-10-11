@@ -68,7 +68,7 @@ app.post('/api/proximity-query', async (req, res) => {
     });
   } catch (err) {
     console.error('Error executing query', err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: 'Internal server error' + err });
   }
 });
 
