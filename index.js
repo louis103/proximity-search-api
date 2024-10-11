@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 
 // Use CORS to allow requests from your React frontend
 app.use(cors({
-    origin: 'https://proximity-search-app.vercel.app/', // Allow requests from our React frontend
+    origin: 'https://proximity-search-app.vercel.app', // Allow requests from our React frontend
     methods: 'GET,POST,PUT,DELETE', // Define allowed HTTP methods -- in this case, CRUD methods.
     credentials: true, // Allow credentials to be shared between frontend and backend
 }));
